@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
 export default class FormDemo1 extends Component {
-  state = { userName: " ", city:" " };
+  state = { userName: " ", city: " " };
   onChangeHandler = (event) => {
     //this.setState({ userName: event.target.value });
-    let name =event.target.name;
-    let value= event.target.value;
+    let name = event.target.name;
+    let value = event.target.value;
 
-    this.setState({[name]:value})
+    this.setState({ [name]: value });
   };
   onSubmitHandler = (event) => {
     event.preventDefault();
